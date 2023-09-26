@@ -14,8 +14,8 @@ const getAllCountries = async () => {
           name: country.name.common,
           image: country.flags.svg,
           continent: country.continents[0],
-          capital: country.capital ? country.capital[0] : 'Not Found',
-          subregion: country.subregion || 'Not Found',
+          capital: country.capital ? country.capital[0] : 'No se encontró',
+          subregion: country.subregion || 'No se encontró',
           area: country.area,
           population: country.population,  
         }));

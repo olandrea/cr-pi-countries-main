@@ -12,7 +12,7 @@ module.exports = (sequelize) =>{
             allowNull: false,
           },
         difficulty: {
-            type: DataTypes.ENUM('Sin Dificultad', 'Dificultad Baja', 'Dificultad Mediana', 'Dificultad Alta', 'Dificultad Extrema'),
+            type: DataTypes.ENUM('Sin Dificultad', 'Dificultad Baja', 'Dificultad Media', 'Dificultad Alta', 'Dificultad Extrema'),
             allowNull: false,
         },
         duration: {
