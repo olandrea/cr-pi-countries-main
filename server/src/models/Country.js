@@ -38,11 +38,6 @@ module.exports = (sequelize) => {
     population: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    createdInDb: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: true,
     }
   },{timestamps: false});
 };
