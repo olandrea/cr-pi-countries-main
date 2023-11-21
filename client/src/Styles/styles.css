@@ -11,7 +11,7 @@
 }   
 
 .navbar-img img{
-    width: 5rem;
+    width: 4rem;
 }  
 
 .navbar-links-cont{
@@ -25,11 +25,11 @@
 }
 
 .landing-cont{
-    text-align: center;
-    align-items: center;
-    background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/03/mapa-paises-felices-infelices-2023-te-va-sorprender-2992494.jpg");
-    width: 98vw;
-    height: 90vh;
+    text-align: center;  
+    align-items: center; 
+    background-image: url("https://planearte3d.com.ar/wp-content/uploads/2021/05/IMG_9795.jpeg");
+    width: 99vw;
+    height: 86vh;
     background-repeat: no-repeat;
     background-position: center;
     border: solid 2px black;
