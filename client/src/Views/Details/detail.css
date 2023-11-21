@@ -1,0 +1,23 @@
+.d-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-box, .d-box2{
+    margin: 100px 50px;
+    width: 50%;
+}
+.d-box2{
+    background-color: rgb(127, 195, 255);
+    border-radius: 5px;
+}
+.d-img{
+    width: 80%;
+    height: auto;
+}
+
+.d-text{
+    font-size: 25px;
+    color:white;
+    margin: 10px;
+}

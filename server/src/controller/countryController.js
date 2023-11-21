@@ -59,7 +59,7 @@ const getCountryById = async (id) => {
 
     const countryFilter = await Country.findAll(
         {
-        where: {id},
+        where: {id}, 
         include: {
             model: Activity,
             attributes: ["name", "difficulty", "duration", "season"],

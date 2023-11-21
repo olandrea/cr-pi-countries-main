@@ -1,0 +1,17 @@
+.navbar-cont{
+    display: flex;
+    background-color:cornsilk;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-img-cont{
+    width: 5rem;
+    padding: 5px;
+}
+
+.navbar-links-cont{
+    display: flex;
+    justify-content: space-around;
+    width: 15rem;
+}

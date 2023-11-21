@@ -1,0 +1,37 @@
+.navbar-cont{
+    display: flex;
+    background-color:cornsilk;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2px black;
+}
+
+.navbar-img-cont img{
+    width: 3rem;
+}   
+
+.navbar-img img{
+    width: 5rem;
+}  
+
+.navbar-links-cont{
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+}
+
+.home-cont{
+    align-items: center;
+}
+
+.landing-cont{
+    text-align: center;
+    align-items: center;
+    background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/03/mapa-paises-felices-infelices-2023-te-va-sorprender-2992494.jpg");
+    width: 98vw;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 2px black;
+    background-color:cornsilk;
+    }

@@ -1,0 +1,42 @@
+.title-c{
+   margin: 2px 0;
+   font-size: 18px;
+}
+.title1-c{
+   color: rgb(247, 0, 255);
+   margin:2px 0;
+   font-size: 18px;
+}
+
+.img-c{
+   width: 100px;
+   height: auto;
+   border-radius: 5px;
+}
+
+.img-c:hover{
+   transform: scale(1.20);
+
+}
+
+.card-c{
+   width: 300px;
+   height: 300px;
+   border: 4px solid grey;
+   background-color: rgba(134, 190, 200, 0.897);
+   
+
+   /* width: 200px;
+   height: auto;
+   background-color: rgba(134, 190, 200, 0.925);
+   border-radius: 5px;
+   padding: 15px; */
+}
+
+.container-c{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   float: left;
+}

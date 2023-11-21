@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+//import './App.css'
+import {Route, BrowserRouter, Routes} from 'react-router-dom';
+import { Detail, Create, Home, Landing } from './Views/index';
+import Navbar from './Componentes/Navbar/Navbar';
+import SearchBar from './Componentes/SearchBar/SearchBar';
+import { useEffect } from 'react';
+import * as actions from './Redux/actions'
+import { useDispatch } from 'react-redux';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const dispatch = useDispatch()
+
+  useEffect(()=>{
+    dispatch(actions.getCountries())
+    dispatch(actions.getActivities())
+    
+  },[])
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+           <Route path="/" element={<Landing />} />
+           <Route path="/home" element={<Home />} />
+           <Route path="/create" element={<Create />} />
+           <Route path="/detail/:id" element={<Detail />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 
-export default App
+export default App;

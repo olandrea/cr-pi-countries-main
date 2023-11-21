@@ -1,13 +1,13 @@
 const { Activity, Country } = require('../db');
 const axios = require ('axios');
 
-const postActivities = async(name, difficulty, duration, season, pais ) => {
+const postActivities = async(name, difficulty, duration, season, pais) => {
 
     const newActivity = await Activity.create({
         name,
         difficulty,
         duration,
-        season,
+        season
       })
        
         const findCountry = await Country.findAll({where: {name: pais}})

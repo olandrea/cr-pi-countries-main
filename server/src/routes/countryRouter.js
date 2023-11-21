@@ -3,7 +3,7 @@ const { getCountriesHandler, getCountryHandler } = require("../handlers/countryH
 
 const countriesRouter = Router();
 
-countriesRouter.get("/", getCountriesHandler);
 countriesRouter.get("/:id", getCountryHandler);
+countriesRouter.get("/", getCountriesHandler);
 
 module.exports = countriesRouter;
